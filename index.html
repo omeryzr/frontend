@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html ng-app="getirBitaksi">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Task 2 - Frontend ></title>
+  <meta name="description" content="Frontend Task Getir-BiTaksi Hackathon">
+  <meta name="author" content="Omer Yazir">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="bower_components/angular-datatables/dist/css/angular-datatables.min.css">
+  <link rel="stylesheet" href="bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css">
+  <link rel="stylesheet" type='text/css' href="static/css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/datatables.net/js/jquery.dataTables.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>
+  <script src="bower_components/angular-datatables/dist/angular-datatables.js"></script>
+
+</head>
+<body ng-controller="MainCtrl">
+  <div class="container">
+    <!-- Navbar Header
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item navbar-link">SEMIH ÖZTÜRK HACKATHON</li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <section class="header">
+    <div class="row">
+      <div class="three columns value-prop"></div>
+      <div class="six columns">
+        <div class="panel">
+          <div class="panel-heading">
+            <!--  Search Form
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <form class="form">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="daterange">Date Range</label>
+                    <input type="text" date-range-picker class="form-control date-picker" id="daterange" ng-model="frm.date" placeholder="startDate - endDate" options="dateRange">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="min-count">Min Count</label>
+                    <input type="number" class="form-control" id="min-count" ng-model="frm.minCount">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="max-count">Max Count</label>
+                    <input type="number" class="form-control" ng-model="frm.maxCount" id="max-count">
+                  </div>
+                </div>
+              </div>
+                <button type="submit" class="btn btn-success" ng-click="getRecord(frm)">Submit</button>
+            </form>
+          </div>
+          <!--  result searchRecords
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div class="panel-body">
+            <table datatable="ng" dt-options="dtOptions" class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Id</th>
+                  <th>Key</th>
+                  <th>Value</th>
+                  <th>Created At</th>
+                  <th>Total Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="record in records">
+                    <td>{{$index + 1}}</td>
+                    <td>{{record._id._id}}</td>
+                    <td>{{record._id.key}}</td>
+                    <td>{{record._id.value}}</td>
+                    <td>{{record._id.createdAt}}</td>
+                    <td>{{record.totalCount}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Navbar Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="mastfoot">
+      <div class="inner">
+          <p> © Getir &amp; BiTaksi Hackathon. Designed By
+            <a href="https://github.com/harunkelesoglu" target="_blank" title="Harun Keleşoğlu">Harun Keleşoğlu</a> and
+            <a href="https://github.com/omeryazir" target="_blank" title="Harun Keleşoğlu">Ömer Yazır</a> |
+            <a href="https://github.com/omeryazir/frontendTask" target="_blank" title="frontendTask">Source Github</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

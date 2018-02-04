@@ -1,0 +1,28 @@
+{
+  "name": "frontend",
+  "homepage": "https://github.com/omeryazir/frontend",
+  "authors": [
+    "omeryzr <omeryzr_@hotmail.com>",
+    "keles0glu <harun.kelesoglu19@gmail.com>"
+  ],
+  "description": "BiTaksi and Getir Hackathon",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "angular": "1.x",
+    "moment": "^2.20.1",
+    "bootstrap-daterangepicker": "^2.1.27",
+    "angular-daterangepicker": "^0.2.2",
+    "angular-datatables": "^5.0.0",
+    "bootstrap": "^4.0.0"
+  }
+}

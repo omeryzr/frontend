@@ -1,0 +1,141 @@
+/*title class behaves like h2*/
+
+body {
+  font-size: small;
+}
+
+.form-control {
+  font-size: 1.25em;
+}
+
+.header {
+  margin-top: 3rem;
+}
+
+.navbar, .navbar-spacer {
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  background: #fff;
+  z-index: 99;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-spacer {
+  display: none;
+}
+
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navbar-item {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+}
+
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  margin-right: 35px;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #222;
+}
+
+.navbar-link.active {
+  color: #33C3F0;
+}
+
+/* Larger than phone */
+
+@media (min-width: 550px) {
+  .title {
+    font-size: 4.2rem;
+  }
+  .header {
+    margin-top: 5rem;
+  }
+}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+  /* Navbar */
+  .navbar+.docs-section {
+    border-top-width: 0;
+  }
+  .header {
+    margin-top: 5rem;
+  }
+  .navbar, .navbar-spacer {
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    background: #fff;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .navbar-spacer {
+    display: none;
+  }
+  .navbar>.container {
+    width: 100%;
+  }
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  .navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+  }
+  .navbar-item:last-child {
+    float: right;
+  }
+  .navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222;
+  }
+  .navbar-link.active {
+    color: #33C3F0;
+  }
+}
+
+.mastfoot {
+  text-align: center;
+  position: Fixed;
+  padding-top: 20px;
+  bottom: 0;
+}
+
+.mastfoot, .cover-container {
+  width: 100%;
+  /* Must be percentage or pixels for horizontal alignment */
+}
+
+table {
+  table-layout: fixed;
+  flex: 1 0 auto;
+}
+
+table td {
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
