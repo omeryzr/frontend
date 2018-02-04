@@ -17,12 +17,10 @@
     "tests"
   ],
   "dependencies": {
+    "bootstrap": "^4.0.0",
+    "angular": "1.X",
     "jquery": "^3.3.1",
-    "angular": "1.x",
-    "moment": "^2.20.1",
-    "bootstrap-daterangepicker": "^2.1.27",
     "angular-daterangepicker": "^0.2.2",
-    "angular-datatables": "^5.0.0",
-    "bootstrap": "^4.0.0"
+    "angular-datatables": "0.5.6"
   }
 }
