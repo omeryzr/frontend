@@ -1,0 +1,19 @@
+# sqlite db
+*.db
+*.sqlite3
+
+# sublime related files
+*.sublime-project
+*.sublime-workspace
+
+# test, build, log
+build
+docs/_build
+dist
+results
+logs
+*.logs
+.idea/workspace.xml
+.idea
+/bower_components
+bower_components
