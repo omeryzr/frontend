@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "frontend task for getirbitaksi hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omeryazir/frontend.git"
+  },
+  "keywords": [
+    "bitaksi",
+    "getir",
+    "hackathon"
+  ],
+  "author": "omryzr,keles0glu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omeryazir/frontend/issues"
+  },
+  "homepage": "https://github.com/omeryazir/frontend#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-datatables": "0.5.6",
+    "angular-daterangepicker": "^0.2.2",
+    "bootstrap": "^4.0.0",
+    "bootstrap-daterangepicker": "^2.1.30",
+    "jquery": "^3.3.1",
+    "moment": "^2.20.1"
+  }
+}

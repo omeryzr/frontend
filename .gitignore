@@ -15,5 +15,4 @@ logs
 *.logs
 .idea/workspace.xml
 .idea
-/bower_components
-bower_components
+/node_modules
