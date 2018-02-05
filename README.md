@@ -13,14 +13,14 @@
 </ul>
 
 <h2><a href="#installation" aria-hidden="true" class="anchor" id="user-content-installation"></a>Installation</h2>
-<p>You should run command in below, Npm install<code>README.md</code>, For install app depencies:</p>
+<p>You should run the following command to install depencies of project</p>
 
 <div class="highlight highlight-source-shell">
 <pre>npm install </pre>
 </div>
 
 <h2><a href="#usage" aria-hidden="true" class="anchor" id="user-content-usage"></a>Usage</h2>
-<p>Replace the contents of <code>README.md</code> with your project's:</p>
+<p>Current versions which the app is running</p>
 
 <ul>
 <li>Use Nodejs version 4.2.6</li>
